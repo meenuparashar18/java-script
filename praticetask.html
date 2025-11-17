@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card Studio</title>
+
+    <style>
+        /* Bas halka sa styling taaki dekhne me thoda sahi lage */
+
+        body {
+            font-family: Arial;
+            display: flex;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        #profile-card {
+            width: 250px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+        }
+
+        #profile-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .skill {
+            display: inline-block;
+            background: lightgray;
+            padding: 4px 8px;
+            border-radius: 5px;
+            margin: 3px;
+        }
+
+        #details {
+            margin-top: 10px;
+            border-top: 1px solid #ccc;
+            padding-top: 10px;
+        }
+.theme-btn.active {
+  border: 2px solid black;
+  font-weight: bold;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ✅ PROFILE CARD AREA -->
+    <div id="profile-card">
+
+        <img id="profile-img" src="https://via.placeholder.com/250" alt="Profile Image">
+
+        <h2 id="profile-name">Your Name</h2>
+        <h4 id="profile-role">Your Role</h4>
+
+        <p id="profile-bio">This is a short bio...</p>
+
+        <div id="skills-container">
+            <!-- Skill Chips yaha add hongi -->
+        </div>
+
+        <div id="details">
+            <p>Extra Details: Yaha kuch extra info hogi.</p>
+        </div>
+
+    </div>
+
+    <!-- ✅ CONTROL PANEL -->
+    <div id="controls">
+        <h3>Controls</h3>
+
+        <label>Name: </label><br>
+        <input type="text" id="name-input"><br><br>
+
+        <label>Role: </label><br>
+        <input type="text" id="role-input"><br><br>
+        <label>Profile Image URL:</label><br>
+<input type="text" id="image-input" placeholder="Paste image link here"><br><br>
+
+
+        <label>Bio: </label><br>
+        <textarea id="bio-input"></textarea><br><br>
+
+        <label>Add Skill: </label><br>
+        <input type="text" id="skill-input">
+        <button id="add-skill-btn">Add</button><br><br>
+
+        <button id="toggle-details-btn">Show/Hide Details</button><br><br>
+
+        <p>Theme Colors:</p>
+        <button class="theme-btn" data-color="lightblue">Light Blue</button>
+        <button class="theme-btn" data-color="lightpink">Light Pink</button>
+        <button class="theme-btn" data-color="lightyellow">Light Yellow</button>
+
+        <br><br>
+        <button id="remove-last-skill-btn">Remove Last Skill</button>
+
+    </div>
+          <script src="script.js"></script>
+
+</body>
+</html>
